@@ -140,6 +140,9 @@ export PATH=/usr/local/mpich/bin:$PATH
 export WM_NCOMPPROCS=24
 alias of1806='source $HOME/OpenFOAM/OpenFOAM-v1806/etc/bashrc WM_NCOMPPROCS=24 WM_MPLIB=OPENMPI'
 alias paraFoam='paraFoam -builtin'
+#use gcc9.2 compile the OpenFOAM need change the OpenFoam-v1806/etc/config.sh/compiler 
+#need compile the OpenFOAM with openmpi ,need change the OpenFOAM-V1806/etc/config.sh/mpi
+alias of7='source $HOME/OpenFOAM/OpenFOAM-v1806/etc/bashrc WM_NCOMPPROCS=24 WM_MPLIB=OPENMPI WM_COMPILER_TYPE=ThirdParty WM_COMPILER=Gcc92'
 # added by Anaconda3 5.3.0 installer
 # >>> conda init >>>
 # !! Contents within this block are managed by 'conda init' !!
